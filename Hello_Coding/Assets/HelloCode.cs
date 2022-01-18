@@ -4,20 +4,21 @@ using UnityEngine;
 
 public class HelloCode : MonoBehaviour
 {
-    float distance;
-    float width;
-    float height;
+    
     void Start()
     {
-        GetDistance(2, 2, 5, 6);
-        Debug.Log("(2,2)에서 (5,6)까지의 거리" + distance);
-    }
-    void GetDistance(float x1, float y1, float x2, float y2)
-    {
-        width = x2 - x1;
-        height = y2 - y1;
+        int[] students = new int[5];
 
-        distance = Mathf.Sqrt(width * width + height * height);
+        students[0] = 100;
+        students[1] = 90;
+        students[2] = 80;
+        students[3] = 70;
+        students[4] = 60;
 
+        Debug.Log("0번 학생의 점수 : " + students[0]);
+        Debug.Log("1번 학생의 점수 : " + students[1]);
+        Debug.Log("2번 학생의 점수 : " + students[2]);
+        Debug.Log("3번 학생의 점수 : " + students[3]);
+        Debug.Log("4번 학생의 점수 : " + students[4]);
     }
 }
